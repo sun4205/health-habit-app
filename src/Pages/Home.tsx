@@ -2,7 +2,7 @@ import { useState } from "react";
 import HabitForm from "../components/HabitForm";
 import HabitList from "../components/HabitList";
 
-type Habit = {
+export type Habit = {
   id: number;
   name: string;
   completed: boolean;

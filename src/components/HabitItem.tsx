@@ -1,8 +1,4 @@
-type Habit = {
-  id: number;
-  name: string;
-  completed: boolean;
-};
+import type { Habit } from "../Pages/Home";
 
 type Props = {
   habit: Habit;

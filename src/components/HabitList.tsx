@@ -1,10 +1,5 @@
 import HabitItem from "./HabitItem";
-
-type Habit = {
-  id: number;
-  name: string;
-  completed: boolean;
-};
+import type { Habit } from "../Pages/Home";
 
 type Props = {
   habits: Habit[];
