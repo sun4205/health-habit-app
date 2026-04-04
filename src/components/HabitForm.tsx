@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./HabitForm.css";
 
 type Props = {
   addHabit: (habit: string) => void;
@@ -15,7 +16,7 @@ function HabitForm({ addHabit }: Props) {
   };
 
   return (
-    <div>
+    <div className="form">
       <h2>Add Habit</h2>
       <input
         type="text"
