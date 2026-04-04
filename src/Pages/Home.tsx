@@ -1,6 +1,7 @@
 import { useState } from "react";
 import HabitForm from "../components/HabitForm";
 import HabitList from "../components/HabitList";
+import "./Home.css";
 
 export type Habit = {
   id: number;
