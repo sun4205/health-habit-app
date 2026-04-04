@@ -1,5 +1,6 @@
 import HabitItem from "./HabitItem";
 import type { Habit } from "../Pages/Home";
+import "./HabitItem.css";
 
 type Props = {
   habits: Habit[];
