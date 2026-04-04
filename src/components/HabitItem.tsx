@@ -1,4 +1,5 @@
 import type { Habit } from "../Pages/Home";
+import "./HabitItem.css";
 
 type Props = {
   habit: Habit;
@@ -7,11 +8,12 @@ type Props = {
 
 function HabitItem({ habit, toggleHabit }: Props) {
   return (
-    <li>
-      {habit.name}{" "}
-      <button onClick={() => toggleHabit(habit.id)}>
-        {habit.completed ? "✅" : "❌"}
-      </button>
+    <li
+      className={habit.completed ? "completed" : ""}
+      onClick={() => toggleHabit(habit.id)}
+    >
+      <span className="habit-name">{habit.name}</span>
+      <button>{habit.completed ? "✅" : "❌"}</button>
     </li>
   );
 }
